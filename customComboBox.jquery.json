@@ -6,12 +6,8 @@
         "dropdown",
         "combo-box",
         "form",
-<<<<<<< HEAD
         "custom",
         "user-input"
-=======
-        "custom"
->>>>>>> 44e1d6a801084a432dd02fb4730f151a4991f47a
     ],
     "homepage":"http://www.marcparillo.com/plugins/",
     "version": "1.0.2",
