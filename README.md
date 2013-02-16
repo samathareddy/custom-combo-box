@@ -1,4 +1,4 @@
-customComboBox
+Custom Combo Box
 ===========
 
 jQuery plugin allowing users to enter a custom field within the combo (dropdown) box itself.
@@ -15,6 +15,6 @@ License Terms
 --------
 **[The General Publis License GPL-2.0][2]**
 
-  [1]: https://github.com/marcoder/custom-combo-box/screenshot.png
+  [1]: https://raw.github.com/marcoder/custom-combo-box/screenshot.png
   [2]: http://opensource.org/licenses/GPL-2.0
 
