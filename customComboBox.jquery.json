@@ -1,11 +1,12 @@
 {
-    "name": "custom-combo-box",
+    "name": "customComboBox",
     "title": "Custom Combo (Dropdown) Box",
     "description": "jQuery plugin accepts custom text input inside a traditional list of dropdown options.",
     "keywords": [
         "dropdown",
         "combo-box",
         "form"
+        "custom"
     ],
     "homepage":"http://www.marcparillo.com/plugins/",
     "version": "1.0.0",
@@ -20,7 +21,7 @@
     ],
     "bugs": "https://github.com/marcoder/custom-combo-box/issues",
     "homepage": "http://github.com/marcocer/custom-combo-box/",
-    "docs": "https://github.com/marcoder/custom-combo-box/README.md",
+    "docs": "https://github.com/marcoder/custom-combo-box#readme",
     "download": "http://github.com/marcoder/custom-combo-box/",
     "dependencies": {
         "jquery": ">=1.5"
