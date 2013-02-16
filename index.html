@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Editable Custom Combo Box</title>
+        <head>
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+            <script type="text/javascript" src="customComboBox.js"></script>
+            <script type="text/javascript">
+                $(document).ready(function() {
+                                    
+                    
+                    $("select").customComboBox({
+
+                        tipText : "Enter Your Value",
+
+                        tipClass : "mytipclass",
+
+                        allowed : /[A-Za-z0-9\$\.\s]/,
+
+                        notallowed : /[\<\>]/,
+
+                        index : 'last',
+
+                        isEditing : function(el, status, value) {
+                            if (typeof window.console!='object') { return; }
+                            console.info('Editing status changed to (', status, ') on ', el, ' combo box and the selected value is "', value, '"');
+                        },
+                        onKeyDown : function(el, character, fulltext) {
+                            if (typeof window.console!='object') { return; }
+                            console.info('The character (', character, ') was just typed into ', el, ' combo box and the complete text is now "', fulltext, '"');
+                        },
+                        onDelete : function(el, fulltext) {
+                            if (typeof window.console!='object') { return; }
+                            console.info('A character was deleted from ', el, ' combo box and the complete text is now "', fulltext, '"');
+                        }
+                    });
+                    
+                    $("form p").find('input').on('click',function(e) {
+                         var sel = $(e.currentTarget).prev('select');
+                         var name = sel.attr('name').toUpperCase();
+                         var val = sel.find('option:selected').val();
+                         $("#result").text(name+" combo box value is " + val);
+                    });
+                    
+
+                });
+
+                    
+
+            </script>
+            <style type="text/css">
+                .mytipclass {
+                    font-style:italic;
+                    color:red;
+                }
+                select {
+                    width:250px;
+                    padding: 2px;
+                    margin-top: 5px;
+                    border:1px solid #999
+                }
+                p {
+                    padding: 10px;
+                }
+            </style>
+        </head>
+
+        <body>
+            <form>
+                <p><strong>Fruits</strong><br/>
+                <select name='fruit'>
+                    <option value="apples">Apples</option>
+                    <option value="bananas">Bananas</option>
+                    <option value="oranges">Oranges</option>
+                </select>
+                <input type='button' value='Submit' />
+                </p>
+                <p><strong>Pizza Toppings</strong><br/>
+                 <select name='pizza'>
+                    <option value="pepperoni">Pepperoni</option>
+                    <option value="extra cheese">Extra Cheese</option>
+                    <option value="banana peppers">Banana Peppers</option>
+                </select>
+                <input type='button' value='Submit' />
+                </p>
+                <p><strong>Donations</strong><br/>
+                 <select name='donation'>
+                    <option value="$10.00">$10.00</option>
+                    <option value="$20.00">$20.00</option>
+                    <option value="$30.00">$30.00</option>
+                </select>
+                <input type='button' value='Submit' />
+                </p>
+            </form>
+            <p id='result'>
+                &nbsp;
+            </p>
+
+        </body>
+
+</html>
