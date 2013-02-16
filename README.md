@@ -15,6 +15,6 @@ License Terms
 --------
 **[The General Publis License GPL-2.0][2]**
 
-  [1]: https://raw.github.com/marcoder/custom-combo-box/screenshot.png
+  [1]: https://raw.github.com/marcoder/custom-combo-box/master/screenshot.jpg
   [2]: http://opensource.org/licenses/GPL-2.0
 
