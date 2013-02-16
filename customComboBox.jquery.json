@@ -9,7 +9,7 @@
         "custom"
     ],
     "homepage":"http://www.marcparillo.com/plugins/",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "author": {
         "name": "Marc Parillo"
     },
@@ -21,6 +21,7 @@
     ],
     "bugs": "https://github.com/marcoder/custom-combo-box/issues",
     "homepage": "http://github.com/marcoder/custom-combo-box/",
+    "demo":"http://www.marcparillo.com/?p=234",
     "docs": "https://github.com/marcoder/custom-combo-box#readme",
     "download": "http://github.com/marcoder/custom-combo-box/",
     "dependencies": {
